@@ -1,3 +1,7 @@
+### WorkFlow
+
+The challenge is identified as a Remote Sensing Image Scene Classification task. First, the Data pre-processing were adopted, The log transformation and Gaussian Filter are used on s1 SAR data to denoise, the Freeman-Durden decomposition is employed to generate the Pseudo-RGB bands so as to process more easily for networks, while the Dark Channel Prior method is used to defogging on s2 MSI data. The NDVI and NDWI are also computed to improve the competence of networks for recognizing the vegetation and water. Then, three strategies including single channel, double channel and Multistage-Classification which involve the ResNet 50 with Stratified 5-fold Cross Validation are operated to promote the diversity of the model. Also, TTA(test time Augmentation), soft-voting and other tricks are implemented on inference period.
+
 ### 小记一下
 #### R1
 萌新一枚，快12月底经[@vicchu](https://github.com/vicchu/)介绍开始打比赛 ，因为之前大家都比较忙事儿很多，之前也顾不上做，正式开始搞已经很迟了，不过咱也是第一次参加刚入门啥都不懂，花了一个星期时间调学习率，瞎改模型，各种续命trn和val也上不去，val更是差的要死，
@@ -14,6 +18,3 @@
 感谢[@vicchu](https://github.com/vicchu/)一直以来的并肩作战  
 感谢[@YonghaoXu](https://github.com/YonghaoXu)提供的大力支持与指导
 
-### WorkFlow
-
-The challenge is identified as a Remote Sensing Image Scene Classification task. First, the Data pre-processing were adopted, The log transformation and Gaussian Filter are used on s1 SAR data to denoise, the Freeman-Durden decomposition is employed to generate the Pseudo-RGB bands so as to process more easily for networks, while the Dark Channel Prior method is used to defogging on s2 MSI data. The NDVI and NDWI are also computed to improve the competence of networks for recognizing the vegetation and water. Then, three strategies including single channel, double channel and Multistage-Classification which involve the ResNet 50 with Stratified 5-fold Cross Validation are operated to promote the diversity of the model. Also, TTA(test time Augmentation), soft-voting and other tricks are implemented on inference period.
